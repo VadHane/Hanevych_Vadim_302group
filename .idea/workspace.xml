@@ -5,41 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="982041e9-2a9b-47e6-9df5-eb645168ea3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab0/Variant2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/builders/AudioBookBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/builders/BookBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/builders/BookInformationBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/builders/IBookBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/models/AudioBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/models/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/models/BookInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/models/Librarian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/models/Library.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/models/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/types/BookGenreType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/models/ISerialize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/models/SerializeJSON.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/types/SerializeTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab3/comparators/AudioBookComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab3/comparators/BookComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab3/comparators/BookInformationComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab3/services/LibraryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab5/database/DataBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab5/types/ConnectionString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Lab0/Variant2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab6/services/BookDBService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab1/models/Librarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab1/models/Librarian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab1/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab1/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/database/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/database/DataBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671173266939</updated>
       <workItem from="1671173269439" duration="21049000" />
-      <workItem from="1672213372170" duration="4234000" />
+      <workItem from="1672213372170" duration="8432000" />
     </task>
     <servers />
   </component>

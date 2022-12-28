@@ -4,8 +4,13 @@ public class Person {
     private String name;
     private String surname;
     private String address;
+    private Integer idNumber;
 
-    public Person(String name, String surname, String address) {
+    public Person(Integer idNumber, String name, String surname, String address) {
+        if (idNumber <= 0) {
+            throw new IllegalArgumentException("Identification number should be more than zero.");
+        }
+
         if (name.trim().isEmpty()) {
             throw new IllegalArgumentException("Name should be not empty.");
         }
@@ -25,6 +30,7 @@ public class Person {
         this.name = name;
         this.surname = surname;
         this.address = address;
+        this.idNumber = idNumber;
     }
 
     public String getName() {
@@ -37,5 +43,9 @@ public class Person {
 
     public String getAddress() {
         return address;
+    }
+
+    public Integer getIdNumber() {
+        return idNumber;
     }
 }

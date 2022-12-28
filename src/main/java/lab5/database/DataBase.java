@@ -2,13 +2,19 @@ package lab5.database;
 
 import lab5.types.ConnectionString;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 
 public class DataBase implements AutoCloseable {
     private Connection connection;
+
+    @Override
+    public void close() throws Exception {
+        try {
+            connection.close();
+        } catch (Exception exception) {
+            throw new Exception("Closing of connection ended with exceptions: " + exception.getMessage());
+        }
+    }
 
     public DataBase(ConnectionString connectionString) throws Exception {
         try {
@@ -37,19 +43,15 @@ public class DataBase implements AutoCloseable {
             throw new Exception(exception.getMessage());
         }
     }
-    @Override
-    public void close() throws Exception {
-        try {
-            connection.close();
-        } catch (Exception exception) {
-            throw new Exception("Closing of connection ended with exceptions: " + exception.getMessage());
-        }
+
+    public PreparedStatement getPreparedStatement(String query) throws SQLException {
+        return connection.prepareStatement(query);
     }
 
     private void initDatabase() throws Exception {
         try {
             setData("CREATE TABLE if not exists Persons (" +
-                    "id INTEGER AUTO_INCREMENT PRIMARY KEY, " +
+                    "id_number INTEGER PRIMARY KEY, " +
                     "address TEXT NOT NULL, " +
                     "name TEXT NOT NULL, " +
                     "surname TEXT NOT NULL);"
@@ -61,7 +63,7 @@ public class DataBase implements AutoCloseable {
                     "title TEXT NOT NULL, " +
                     "description TEXT NOT NULL, " +
                     "pages INT NOT NULL, " +
-                    "FOREIGN KEY (author) REFERENCES Persons(id));"
+                    "FOREIGN KEY (author_id) REFERENCES Persons(id));"
             );
         } catch (Exception exception) {
             throw new Exception("Connecting was created, but initializing of database ended with errors.");

@@ -7,7 +7,7 @@ public class Librarian {
     public void getBookWithFirstGenre(IBookBuilder builder) {
         builder.setGenre(BookGenreType.genre1);
         builder.setTitle("How Vadim to passed exams...");
-        builder.setAuthor(new Person("Best", "Woman", "st. Happy Mans"));
+        builder.setAuthor(new Person("Best", "Woman", "st. Happy Mans", 1223));
         builder.setShortDescription("very very short desc");
         builder.setPageCount(5);
     }
@@ -15,7 +15,7 @@ public class Librarian {
     public void getBookWithSecondGenre(IBookBuilder builder) {
         builder.setGenre(BookGenreType.genre2);
         builder.setTitle("How Vadim to passed exams... The second part.");
-        builder.setAuthor(new Person("Best", "Man", "st. Happy Woman"));
+        builder.setAuthor(new Person("Best", "Man", "st. Happy Woman", 24562));
         builder.setShortDescription("very very long desc");
         builder.setPageCount(20);
     }
